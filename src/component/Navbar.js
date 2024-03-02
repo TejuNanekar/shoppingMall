@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./SingleCard";
+
 export default function Navbar(props) {
+  const [Categories, setCategories] = useState("Categories");
   return (
     <>
       <nav className={`navbar navbar-expand-lg bg-dark`}>
@@ -39,28 +41,49 @@ export default function Navbar(props) {
                   aria-expanded="false"
                   className={`btn btn-sm dropdown-toggle my-1 text-light`}
                 >
-                  Categories
+                  {Categories}
                 </button>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                   <li>
-                    <Link className={`dropdown-item text-dark`} to="/men">
+                    <Link
+                      className={`dropdown-item text-dark`}
+                      to="/men"
+                      onClick={() => {
+                        setCategories("Men's clothing");
+                      }}
+                    >
                       Men's clothing
-                    </Link>
-                  </li>
-                  <li>
-                    <Link className={`dropdown-item text-dark`} to="/jewelery">
-                      Jewelery
-                    </Link>
-                  </li>
-                  <li>
-                    <Link className={`dropdown-item text-dark`} to="/women">
-                      Women's clothing
                     </Link>
                   </li>
                   <li>
                     <Link
                       className={`dropdown-item text-dark`}
+                      to="/women"
+                      onClick={() => {
+                        setCategories("Women's clothing");
+                      }}
+                    >
+                      Women's clothing
+                    </Link>
+                    <li>
+                      <Link
+                        className={`dropdown-item text-dark`}
+                        to="/jewelery"
+                        onClick={() => {
+                          setCategories("Jewelery");
+                        }}
+                      >
+                        Jewelery
+                      </Link>
+                    </li>
+                  </li>
+                  <li>
+                    <Link
+                      className={`dropdown-item text-dark`}
                       to="/electronics"
+                      onClick={() => {
+                        setCategories("Electronics");
+                      }}
                     >
                       Electronics
                     </Link>
