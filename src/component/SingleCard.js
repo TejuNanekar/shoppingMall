@@ -1,6 +1,6 @@
 import React from "react";
 // import PropTypes from "prop-types";
-import "./SingleCard.css";
+import "../css/SingleCard.css";
 const SingleCard = (props) => {
   return (
     <>
