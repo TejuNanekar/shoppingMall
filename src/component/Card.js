@@ -37,7 +37,7 @@ export default function Card(props) {
     <>
       <h1 style={{ color: "red", fontFamily: "-moz-initial" }} className="my-4">
         {" "}
-        <center>__Top Headline {props.head}__</center>
+        <center>_{props.head}__</center>
       </h1>
       <div className="container my-4">
         <div className="row ">{intity}</div>

@@ -38,7 +38,7 @@ function App() {
               <Card
                 category="men's clothing"
                 key="men's clothing"
-                head="men's clothing"
+                head="Men's clothing"
               />
             }
           />
@@ -49,7 +49,7 @@ function App() {
               <Card
                 category="women's clothing"
                 key="women's clothing"
-                head="women's clothing"
+                head="Women's clothing"
               />
             }
           />
@@ -60,7 +60,7 @@ function App() {
               <Card
                 category="electronics"
                 key="electronics"
-                head="electronics"
+                head="Electronics"
               />
             }
           />
@@ -69,7 +69,7 @@ function App() {
             exact
             path="/jewelery"
             element={
-              <Card category="jewelery" key="jewelery" head="jewelery" />
+              <Card category="jewelery" key="jewelery" head="Jewelery" />
             }
           />
           <Route exact path="/login" element={<Login />} />
