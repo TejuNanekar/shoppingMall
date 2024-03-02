@@ -101,15 +101,17 @@ export default function Navbar(props) {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className={`nav-link text-light`} to="/">
+                <Link className={`nav-link text-light`} to="/contactuspage">
                   Contact us
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className={`nav-link text-light`} to="/about">
+                <Link className={`nav-link text-light`} to="/aboutpage">
                   About us
                 </Link>
               </li>
+
+              
             </ul>
           </div>
         </div>

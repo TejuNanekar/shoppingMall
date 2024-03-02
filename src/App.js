@@ -8,7 +8,8 @@ import Card from "./component/Card";
 import AllProduct from "./component/AllProduct";
 import Footer from "./component/Footer";
 import AddProduct from "./component/AddProduct";
-import About from "./component/About";
+import AboutPage from "./component/AboutPage";
+import ContactUsPage from "./component/ContactUsPage";
 function App() {
   const [Mode, setMode] = useState("Dark Mode");
   const change = () => {
@@ -30,7 +31,9 @@ function App() {
           <Route exact path="/" element={<AllProduct />} />
           <Route exact path="/home" element={<AllProduct />} />
           <Route exact path="/addProduct" element={<AddProduct />} />
-          <Route exact path="/about" element={<About />} />
+          <Route exact path="/aboutpage" element={<AboutPage />} />
+          <Route exact path="/contactuspage" element={<ContactUsPage />} />
+
           <Route
             exact
             path="/men"

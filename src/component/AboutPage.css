@@ -1,0 +1,19 @@
+/* AboutPage.css */
+
+.about-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .about-container h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+  
+  .about-container p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+  }
+  
