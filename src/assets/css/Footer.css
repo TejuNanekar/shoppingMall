@@ -2,9 +2,15 @@
   font-family: "Poppins";
 }
 .footer-basic {
-  padding: 40px 0;
   background-color: #ffffff;
-  color: #4b4c4d;
+  color: #7d7e80;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
 }
 
 .footer-basic ul {

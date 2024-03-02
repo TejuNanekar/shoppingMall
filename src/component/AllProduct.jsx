@@ -1,6 +1,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import SingleCard from "./SingleCard";
+import Navbar from "./Navbar";
 // import PropTypes from "prop-types";
 
 export default function AllProduct(props) {
@@ -36,6 +37,8 @@ export default function AllProduct(props) {
   }, []);
   return (
     <>
+      <Navbar />
+
       <h1 style={{ color: "red", fontFamily: "-moz-initial" }} className="my-4">
         {" "}
         <center></center>

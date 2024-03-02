@@ -1,5 +1,6 @@
 import React from "react";
-import "../css/Footer.css";
+import "../assets//css/Footer.css";
+import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa6";
 // import { SiGeeksforgeeks } from "react-icons/si";
 // import { MdWork } from "react-icons/md";
@@ -7,16 +8,18 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <>
-      <hr />
       <div className="footer-basic">
         <footer>
           <div className="social">
-            <Link to="#">
+            <a href="https://github.com/TejuNanekar" target="_blank">
               <FaGithub />
-            </Link>
-            <Link to="#">
-              <FaGithub />
-            </Link>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/tejaswini-nanekar-2821a2238/"
+              target="_blank"
+            >
+              <FaLinkedin />
+            </a>
           </div>
           <ul className="list-inline">
             <li className="list-inline-item">

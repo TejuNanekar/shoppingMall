@@ -1,6 +1,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import SingleCard from "./SingleCard";
+import Navbar from "./Navbar";
 
 export default function Card(props) {
   let [intity, setintity] = useState();
@@ -35,6 +36,7 @@ export default function Card(props) {
   }, []);
   return (
     <>
+      <Navbar />
       <h1 style={{ color: "red", fontFamily: "-moz-initial" }} className="my-4">
         {" "}
         <center>_{props.head}__</center>
